@@ -11,12 +11,10 @@ engine = pyttsx3.init()
 engine.setProperty('rate', 150)
 engine.setProperty('volume', 0.9)
 
-
 # Function to convert text to speech
 def speak(text):
     engine.say(text)
     engine.runAndWait()
-
 
 # Function to greet the user
 def greet():
@@ -27,7 +25,6 @@ def greet():
         return "Good afternoon!"
     else:
         return "Good evening!"
-
 
 # Function to process user queries
 def process_query(query):
@@ -62,9 +59,8 @@ def process_query(query):
         response = "Goodbye!"
     else:
         response = "I'm sorry, I didn't understand that."
-
+    
     return response
-
 
 # Streamlit application
 st.title("Voice Assistant")
